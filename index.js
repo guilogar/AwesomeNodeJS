@@ -7,6 +7,9 @@ const bodyParser = require('body-parser');
 const baseAPI = '/api/v1';
 const cors = require('cors');
 
+const dotenv = require('dotenv');
+dotenv.config();
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(logger('dev'));
