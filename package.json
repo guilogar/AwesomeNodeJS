@@ -1,0 +1,20 @@
+{
+  "name": "AwesomeNodeJS",
+  "version": "1.0.0",
+  "description": "Backend for AwesomeReact of joaquinpco on GitHub",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": "https://github.com/guilogar/AwesomeNodeJS",
+  "author": "Guillermo López García, José Joaquin Perez-Calderón Ortiz y Gonzalo Ulibarri García",
+  "license": "MIT",
+  "engines": {
+    "node": "12.x"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
