@@ -15,7 +15,7 @@ async function insertUsers()
     {
         await User.create({
             username: 'perico',
-            password: 'perico',
+            password: 'perico' + i,
             fullname: 'perico perez',
             isActive: true
         });
