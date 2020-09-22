@@ -14,9 +14,9 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-const basic = require('./routes/basic');
+const users = require('./routes/users');
 
-app.use(baseAPI, basic);
+app.use(baseAPI, users);
 
 const server = http.createServer(app);
 
