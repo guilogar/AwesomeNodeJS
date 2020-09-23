@@ -10,7 +10,7 @@
   "author": "Guillermo López García, José Joaquin Perez-Calderón Ortiz y Gonzalo Ulibarri García",
   "license": "MIT",
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   },
   "dependencies": {
     "cors": "^2.8.5",
