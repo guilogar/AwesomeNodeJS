@@ -14,6 +14,25 @@ router.get('/users', async (req, res) => {
     });
 });
 
+router.get('/user/:username/:password', async (req, res) => {
+    const username = req.params.username;
+    const password = req.params.password;
+
+    const user = await User.findOne({
+        where: {
+            username: username,
+            password: password
+        }
+    });
+
+    await sequelize.sync();
+    
+    res.status(200).send({
+        msg: 'got it!',
+        user: user
+    });
+});
+
 router.post('/users', async (req, res) => {
     res.status(200).send({
         msg: 'created!'
